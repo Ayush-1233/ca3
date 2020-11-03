@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    position: relative; 
+  }
+  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: black;}
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">AirGO</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1" data-toggle="tooltip" data-placement="bottom" title="Our services">Our services</a></li>
+          <li><a href="#section2" data-toggle="tooltip" data-placement="bottom" title="Price">Price</a></li>
+          <li><a href="#section3" data-toggle="tooltip" data-placement="bottom" title="News">News Collapse and Modal</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41" data-toggle="popover" title="Safest plane ever" data-content="Best experience">Label</a></li>
+              <li><a href="#section42" data-toggle="popover" title="world lagest aircraft" data-content="Best experience">Login</a></li>
+            </ul>
+
+            
+
+
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="section1" class="container-fluid">
+  <h1>Our services during lockdown </h1>
+  
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="Airlines3.jpg" data-toggle="tooltip" title="Hooray!" target="_blank">
+          <img src="Airlines3.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p>Thousands of migrants evacuated by our airlines team</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        
+        <a href="airlines.jpg" data-toggle="tooltip" title="Hooray!" target="_blank">
+          <img src="airlines.jpg" alt="Nature" style="width:100%">
+          <div class="caption">
+            <p>We provide best quality</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="jahaj.jpg" data-toggle="tooltip" title="Hooray!" target="_blank">
+          <img src="jahaj.jpg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p>Airline worker works hard to evacuate passenger from other country</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</div>
+<div id="section2" class="container-fluid">
+  <h1>Price</h1>
+  
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="ayush.jpeg" target="_blank">
+          <img src="ayush.jpeg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p>Price: 400$ (Mumbai to London)</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="ayush2.jpg" target="_blank">
+          <img src="ayush2.jpg" alt="Nature" style="width:100%">
+          <div class="caption">
+            <p>Price: 480$ (New York to Singapore)</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="ayush3.jpg" target="_blank">
+          <img src="ayush3.jpg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p>Price: 340$ (ireland to Japan)</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+</div>
+<div id="section3" class="container-fluid">
+  <h1>Collapse News and Modal</h1>
+  
+  
+  
+  <div class="container">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Click on it
+    </button>
+    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h3 class="modal-title" id="exampleModalLabel"><b>Enter check payment</b></h3>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true"> &times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+    <form>
+    <div class="form-group">
+    <label for="">Name on check</label>
+    <input type="text" class="form-control" aria-describedby="name" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+    <label for="">Check number</label>
+    <input type="text" class="form-control" aria-describedby="name" placeholder="Enter number">
+    </div>
+    <div class="form-group">
+    <label for="">Routing number <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-title="The first 9 digits in the bottom left of the check" data-content=":XXXXXXXXXX">*</button> </label>
+    <input type="text" class="form-control" aria-describedby="name" placeholder="Enter number">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+   
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+    $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+    });
+    </script>
+    </body>
+    </html><br><br>
+  
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">News collapse</button>
+    <div id="demo" class="collapse">
+        The risk of exposure to the coronavirus on flights is very low, a U.S. Department of Defense study released on Thursday found, 
+        a positive sign for the airline industry as it tries to rebound from the pandemic's crushing effect on travel.<br>
+        As per the study, when a seated passenger is wearing a mask, an average 0.003% of air particles within the breathing zone around a person's 
+        head are infectious, even when every seat is occupied, it found. The testing assumed only one infected person on the plane and
+        did not simulate the effects of passenger movement around the cabin.<br>
+        The study, conducted aboard United Airlines Boeing 777 and 767 aircraft, showed that masks helped minimize exposure to 
+        infection when someone coughed, even in neighbouring seats. About 99.99% of particles were filtered out of the cabin 
+        within 6 minutes due to fast air circulation, downward air ventilation and the filtration systems on the aircraft. 
+        It estimated that to receive an infectious dose, a passenger would need to fly 54 hours on a plane with an infectious person.
+        
+    </div>
+  
+  
+  
+  
+</div>
+<div id="section41" class="container-fluid">
+  <h1>Label</h1>
+  
+ 
+   
+    <p>Our company always eager to provides you a better experience</p>  
+    <span class="label label-default">Label</span><br><br>
+    <div class="container-fluid">
+    <div class="alert alert-danger alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Offer:</strong> our company provides best user experince in the world and now we are offering 44% off on your first journey    </div>
+   </div>
+
+
+
+
+
+</div>
+<div id="section42" class="container-fluid">
+  <h1>Login</h1>
+  
+   
+  <div id="shyamal" class=" modal-header col-md-4 col-md-offset-4">
+            
+   <h2>Login</h2>
+    <div class="form-group">
+         <label for="usr">UserName:</label>
+         <input type="text" class="form-control" id="user">
+    </div>
+  
+    <div class="form-group">
+         <label for="pwd">Password:</label>
+         <input type="password" class="form-control" id="pwd">
+    </div> 
+   
+    
+    <div>
+      <a href="">Forgot password?</a><br>
+      <button class="btn btn-info btn-block my-3" type="submit">Sign in</button>
+      <br>
+      <p>Not a member?<a href="#">   Register  </a> </p>
+    </div>
+    
+  </div>
+  
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+    </script>
+
+
+</div>
+
+</body>
+</html>

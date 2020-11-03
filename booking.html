@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+    
+      <nav class="navbar navbar-inverse " >
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Air asia</a>
+          </div>
+          <ul class="nav nav-tabs navbar-nav">
+            <li class="active"><a href="#" data-toggle="tooltip" data-placement="bottom" title="nav-tabs">Home</a></li>
+            <li data-toggle="modal" data-target="#myModal"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Modal">About</a></li>
+    
+    
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+              
+                
+                <div class=" modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">About Air Asia</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                        Established in 1993 and started operations on 18 Nov 1996, AirAsia is Asia’s largest 
+                        low fare, no frills airline and it operates scheduled domestic and international flights.
+                        <br><br>
+                        AirAsia pioneered low cost travelling in Asia. It is also the first airline in the region to implement 
+                        fully ticketless travel. It has implemented allocated seatings across all its flights as of 
+                        5 Feb 2009.<br><br>
+    
+                        By May 2008, the airline had flown 55 million cumulative passangers, and in 2010, 
+                        it has the world’s lowest costs for an Airline, at $3.21 per seat-kilometre.
+                        Asia’s leading airline was established with the dream of making flying possible for everyone. 
+                        Since 2001, AirAsia has swiftly broken travel norms around the globe and has risen to become 
+                        the world’s best.<br><br>
+
+                        With a route network that spans through to over 20 countries, AirAsia continues 
+                        to pave the way for low-cost aviation through its innovative solutions, 
+                        efficient processes and a passionate approach to business.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+            
+            
+          
+              <li class="dropdown" style="list-style: none;">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bookings <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="booking4.html" data-toggle="tooltip" data-placement="left" title="dropdown-menu">Reviews</a></li>
+                      <li><a href="booking3.html" data-toggle="tooltip" data-placement="right" title="dropdown-menu">Explore</a></li>
+                      <li><a href="booking1.html" data-toggle="tooltip" data-placement="right" title="dropdown-menu">Flight Status</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#" data-toggle="tooltip" data-placement="right" title="dropdown-menu">Support</a></li>
+                      
+                      <li><a href="#" data-toggle="tooltip" data-placement="right" title="dropdown-menu">Check-in</a></li>
+                    </ul>
+              </li>
+              
+    
+    
+    
+            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Badge">Notification <span class="badge">2</span></a></li>
+            
+            
+    
+    
+    
+    
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          <button class="btn btn-default navbar-btn" type="button" data-toggle="modal" data-target="#exampleModal">
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Click here">
+                  <span class="glyphicon glyphicon-user"></span> Sign Up</a></button>
+          
+          
+          
+            
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                   <div class="modal-content">
+                      <div class="modal-header">
+                         <h3 class="modal-title" id="exampleModalLabel"><b>Register Yourself</b></h3>
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true"> &times;</span>
+                             </button>
+                      </div>
+                      <div class="modal-body">
+                      <form>
+                      <div class="form-group">
+                         <label for="">Name</label>
+                             <input type="text" class="form-control" aria-describedby="name" placeholder="Enter name">
+                      </div>
+                      <div class="form-group">
+                         <label for="">Email</label>
+                             <input type="text" class="form-control" aria-describedby="name" placeholder="Enter Email">
+                      </div>
+                      <div class="form-group">
+                         <label for="">Phone number <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-title="10 digit only" data-content="0123456789">*</button> </label>
+                             <input type="text" class="form-control" aria-describedby="name" placeholder="Enter number">
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="">Password</label>
+                            <input type="text" class="form-control" aria-describedby="name" placeholder="Password">
+                     </div>
+    
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-danger">Cancel</button>
+                      </form>
+                      </div>
+                  </div>
+                </div>
+              </div>
+           
+            <script>
+            $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
+            });
+            </script>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li><a href="#shyamal" data-toggle="tooltip" data-placement="bottom" title="glyphicon-log-in">
+              <span  class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul> 
+          
+          <form class="navbar-form navbar-right" action="https://www.google.com/flights?q=delhi+flight&sxsrf=
+          ALeKk03hXdlsrXRBhDMz2NkduN9WlAfQlQ:1604408456226&source=lnms&impression_in_search=true&mode_promoted=true&tbm=
+          flm&sa=X&ved=2ahUKEwj8i-6gt-bsAhUMyDgGHZKMC4MQ_AUoAXoECAIQAw#flt=VNS./m/0dlv0.2020-11-19;c:INR;e:1;sd:1;t:f;tt:o">
+            
+            <div class="input-group">
+              
+              <input type="text" id="Harsh" class="form-control" placeholder="Search" name="search">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                   <a href="#" data-toggle="tooltip" data-placement="bottom" title="glyphicon-search">
+                  <i class="glyphicon glyphicon-search"></a></i>
+                </button>
+                
+              </div>
+            </div>
+          </form>
+        </div>
+      </nav>
+
+      
+<div class="container  ">
+    <div class="row ">
+       <div class="alert alert-danger alert-dismissible col-sm-12  ">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> 
+        <strong>Alerts!</strong> Know before you go. The restrictions surrounding COVID-19 change often.
+            Please stay informed before traveling. Stay safe.
+       </div>
+    </div>
+</div>
+
+<div class="booking-form-box">
+    <div class="radio-btn">
+        <input type="radio" class="btn" name="check" checked="checked"><span>Roundtrip</span>
+        <input type="radio" class="btn" name="check"><span>One Way</span>
+        <input type="radio" class="btn" name="check"><span>Multi-City</span>
+    </div>
+    
+    <div class="booking-form">
+        <label>Flying From</label>
+        <input type="text"class="form-control"placeholder="City or Airport">
+        <label>Flying To</label>
+        <input type="text"class="form-control"placeholder="City Or Airport">
+    
+    <div class="input-grp">
+        <label>Departing</label>
+        <input type="date" class="form-control select-date">
+    </div>
+    
+    <div class="input-grp">
+        <label>Returning</label>
+        <input type="date" class="form-control select-date">
+    </div>
+    
+    <div class="input-grp">
+        <label>Adults</label>
+        <input type="number" class=form-control value ="1">
+    </div>
+    
+    <div class="input-grp">
+        <label>Children</label>
+        <input type="number" class="form-control" value="0">
+    </div>
+    
+    <div class="input-grp">
+        <label>Travel Class</label>
+    <select class="custom-select">
+        <option value="1">Business Class</option>
+        <option value="2">Economy Class</option>
+        <option value="3">Premium Economy Class</option>
+        <option value="4">First Class</option>
+    </select>
+    </div><br><br>
+    
+    <div class=" input-grp">
+        <button type="button" class="btn btn-primary ">Show Flights</button>
+    </div>
+  </div>
+</div><br><br>
+
+
+<div class="container-fluid">
+    <h1 class=" active text-warning">Our services</h1>
+<div class = "row"> 
+    <div class = "col-sm-6 col-md-3"> 
+        <a href = "#"   class = "thumbnail"> 
+            <Img src = "airlines.jpg" 
+                 alt = "generic placeholder thumbnail"> 
+        </a> 
+    </div> 
+    <div class = "col-sm-6 col-md-3"> 
+        <a href = "#"   class = "thumbnail"> 
+            <Img src = "FLIGHTS.jpg" 
+                 alt = "generic placeholder thumbnail"> 
+        </a> 
+    </div> 
+    <div class = "col-sm-6 col-md-3"> 
+        <a href = "#"   class = "thumbnail"> 
+            <Img src = "Airlines3.jpg" 
+                 alt = "generic placeholder thumbnail"> 
+        </a> 
+    </div> 
+    <div class = "col-sm-6 col-md-3"> 
+        <a href = "#"   class = "thumbnail"> 
+            <Img src = "ayush.jpeg" 
+                 alt = "generic placeholder thumbnail"> 
+        </a> 
+    </div> 
+</div>
+<div class="container">
+    <h2 class=" active text-warning">Explore other services</h2>
+    <p class=" active text-warning">Believe the unavailable, dream the impossible,never take no for an answer</p>
+    <ul class=" anv nav-pills pagination">
+      <li class="active"><a href="#">1</a></li>
+      <li ><a href="booking5.html">2</a></li>
+      <li><a href="booking1.html">3</a></li>
+      <li><a href="booking3.html">4</a></li>
+      <li><a href="booking4.html">5</a></li>
+    </ul>
+  </div>
+
+
+
+
+
+
+</div>
+</header>
+</body>
+</html>
